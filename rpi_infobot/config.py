@@ -10,10 +10,10 @@ CHATS = 'chats'
 
 def load(config_file=None):
     config_path = config_file or HOME_CONFIG_FILE
-    if !os.path.exists(config_path):
+    if os.path.exists(config_path) is not True:
     	config_path = ETC_CONFIG_FILE
 
-    if !os.path.exists(config_path):
+    if os.path.exists(config_path) is not True:
     	raise Exception(f"No configuration defined for rpi.infobot in {config_file} or {HOME_CONFIG_FILE} or {ETC_CONFIG_FILE}")
     	
     data = {}

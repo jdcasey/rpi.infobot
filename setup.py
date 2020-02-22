@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 import sys
 
-version='0.0.1'
+version='1.0'
 
 setup(
     zip_safe=True,
@@ -33,7 +33,7 @@ setup(
     test_suite="tests",
     entry_points={
       'console_scripts': [
-        'rpi-infobot = infobot:bot'
+        'rpi-infobot = rpi_infobot:bot'
       ],
     }
 )
