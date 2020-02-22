@@ -3,12 +3,10 @@
 from setuptools import setup, find_packages
 import sys
 
-version='1.0.0'
-
 setup(
     zip_safe=True,
     name='RPi.infobot',
-    version=version,
+    version='1.0.1',
     long_description="Application for reporting basic diagnostic information about a Raspberry Pi",
     classifiers=[
       "Development Status :: 3 - Alpha",
