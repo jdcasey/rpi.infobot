@@ -1,0 +1,11 @@
+[Unit]
+Description=rPi Infobot
+After=network.target auditd.target
+
+[Service]
+Type=notify
+ExecStart=/usr/local/lib/rpi.infobot/bin/rpi-infobot -c /etc/rpi.infobot/config.yaml
+
+[Install]
+WantedBy=multi-user.target
+Alias=infobot.service
