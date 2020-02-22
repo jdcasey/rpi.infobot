@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 import sys
 
-version='1.0'
+version='1.0.0'
 
 setup(
     zip_safe=True,
